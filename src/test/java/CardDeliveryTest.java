@@ -12,7 +12,9 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class CardDeliveryTest {
     @BeforeEach
-    void setUpAll(){open("http://localhost:9999");}
+    void setUpAll() {
+        open("http://localhost:9999/");
+    }
 
     @Test
     public void shouldSomethingTest1()  {
