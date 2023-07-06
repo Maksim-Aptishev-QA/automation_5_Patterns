@@ -3,17 +3,13 @@ import com.codeborne.selenide.selector.ByText;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-
-import java.time.Duration;
-
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class CardDeliveryTest {
     @BeforeEach
     void setUpAll() {
-        open("http://localhost:9999/");
+        open("http://0.0.0.0:9999/");
     }
 
     @Test
