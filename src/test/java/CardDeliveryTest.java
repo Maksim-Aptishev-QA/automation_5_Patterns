@@ -3,17 +3,15 @@ import com.codeborne.selenide.selector.ByText;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+
+import static com.codeborne.selenide.Selenide.*;
 
 public class CardDeliveryTest {
     @BeforeEach
-    void setUpAll() {
-        open("http://0.0.0.0:9999/");
-    }
+    void setUpAll() { open("http://localhost:9999/");}
 
     @Test
-    public void shouldSomethingTest1()  {
+    public void shouldSomethingTest()  {
         String city = DataGenerator.generateCity();
         String name = DataGenerator.generatorName();
         String phone = DataGenerator.generatePhoneNumber();
