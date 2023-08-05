@@ -20,6 +20,10 @@ public class CardDeliveryTest {
     static void tearDownAll() {
         SelenideLogger.removeListener("allure");
     }
+    @BeforeEach
+    void setup() {
+        open("http://localhost:9999");
+    }
 
     @Test
     public void shouldSomethingTest() {
