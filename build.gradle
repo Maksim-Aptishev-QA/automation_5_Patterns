@@ -8,9 +8,9 @@ group = 'org.example'
 version = '1.0-SNAPSHOT'
 sourceCompatibility = 11
 allure {
-    version = '2.16.1'
+    version = '2.20.1'
     useJUnit5 {
-        version = '2.16.1'
+        version = '2.20.1'
     }
 }
 repositories {

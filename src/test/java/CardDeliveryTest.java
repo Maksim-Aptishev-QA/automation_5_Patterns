@@ -32,7 +32,6 @@ public class CardDeliveryTest {
         String phone = DataGenerator.generatePhoneNumber();
         String planingData = DataGenerator.generateDate(4, "dd.MM.yyyy");
         String changeDate = DataGenerator.generateDate(8, "dd.MM.yyyy");
-        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue(city);
         $("[data-test-id=date] input").doubleClick().sendKeys((planingData));
         $("[data-test-id=name] input").setValue(name);
